@@ -1,0 +1,7 @@
+---
+- name: Validate variables
+  include_tasks: pre_checks.yml
+- name: Print variables
+  include_tasks: print_vars.yml
+- name: Built-in Tests
+  include_tasks: tests.yml

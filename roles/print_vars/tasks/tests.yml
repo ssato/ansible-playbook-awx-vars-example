@@ -1,0 +1,11 @@
+---
+- name: Test variables
+  assert:
+    that:
+      - foo == "GROUP_VAR_FOO"
+      - bar == "HOST_VAR_BAR"
+      - baz == "BAZ"
+    fail_msg: |
+      foo: {{ foo | to_nice_json }}
+      bar: {{ bar | to_nice_json }}
+      baz: {{ baz | to_nice_json }}

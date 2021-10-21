@@ -1,0 +1,3 @@
+---
+ansible_connection: local
+foo: GROUP_VAR_FOO

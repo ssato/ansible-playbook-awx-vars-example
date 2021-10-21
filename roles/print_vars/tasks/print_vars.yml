@@ -1,0 +1,7 @@
+---
+- name: Print variables
+  ansible.builtin.debug:
+    msg: |
+      foo: {{ foo }}
+      bar: {{ bar }}
+      baz: {{ baz }}

@@ -1,0 +1,7 @@
+---
+- name: Inventory Vars Tests
+  hosts: all
+  vars:
+    baz: BAZ
+  roles:
+    - print_vars

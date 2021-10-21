@@ -1,0 +1,17 @@
+---
+- name: Validate variables
+  assert:
+    that:
+      - foo is defined
+      - foo is string
+      - foo | length > 0
+      - bar is defined
+      - bar is string
+      - bar | length > 0
+      - baz is defined
+      - baz is string
+      - baz | length > 0
+    fail_msg: |
+      foo: {{ foo | to_nice_json }}
+      bar: {{ bar | to_nice_json }}
+      baz: {{ baz | to_nice_json }}
