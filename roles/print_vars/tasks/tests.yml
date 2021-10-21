@@ -1,6 +1,6 @@
 ---
 - name: Test variables
-  assert:
+  ansible.builtin.assert:
     that:
       - foo == "GROUP_VAR_FOO"
       - bar == "HOST_VAR_BAR"

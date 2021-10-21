@@ -1,6 +1,6 @@
 ---
 - name: Validate variables
-  assert:
+  ansible.builtin.assert:
     that:
       - foo is defined
       - foo is string
