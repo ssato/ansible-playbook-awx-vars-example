@@ -1,6 +1,7 @@
 ---
 - name: Inventory Vars Tests
   hosts: all
+  gather_facts: false
   vars:
     baz: BAZ
   roles:
